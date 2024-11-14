@@ -1,6 +1,0 @@
-README.md
-setup.py
-src/textSummerizer.egg-info/PKG-INFO
-src/textSummerizer.egg-info/SOURCES.txt
-src/textSummerizer.egg-info/dependency_links.txt
-src/textSummerizer.egg-info/top_level.txt
