@@ -1,17 +1,17 @@
 import setuptools
 
 with open("README.md", "r", encoding="utf-8") as f:
-    long_description = f.read()
+    long_description = f.read() #Reading the README.md
 
-
+#Project Metadata
 _version_ = "0.0.0"
 
 Repo_Name = "Jotter.ai"
 Author_Name = "Dakshyashree"
-SRC_REPO = "textSummerizer"
+SRC_REPO = "textSummarizer"
 Author_Email = "dakshyashreejamwal@gmail.com"
 
-
+#Package Setup with setuptools.setup()
 setuptools.setup(
     name=SRC_REPO,
     version=_version_,

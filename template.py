@@ -1,9 +1,10 @@
+#Imports and Setup
 import os
 from pathlib import Path
 import logging
 
-logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s: ')
-
+logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s: ')#Configured to log progress with timestamps in an informative format
+#Project Name and File List
 project_name = "Jotter.ai"
 
 list_of_files = [
@@ -33,11 +34,12 @@ for filepath in list_of_files:
     filepath = Path(filepath)
     filedir, filename = os.path.split(filepath)
 
+#Directory Creation
     if filedir !="":
         os.makedirs(filedir, exist_ok=True)
         logging.info(f"Creating directory:{filedir} for the file {filename}")
 
-
+#File Creation
     if(not os.path.exists(filepath) or (os.path.getsize(filepath)==0)):
             with open(filepath,'w') as f:
                  pass
