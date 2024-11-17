@@ -1,0 +1,6 @@
+README.md
+setup.py
+src/jotter.egg-info/PKG-INFO
+src/jotter.egg-info/SOURCES.txt
+src/jotter.egg-info/dependency_links.txt
+src/jotter.egg-info/top_level.txt

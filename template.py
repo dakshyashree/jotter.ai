@@ -5,7 +5,7 @@ import logging
 
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s: ')#Configured to log progress with timestamps in an informative format
 #Project Name and File List
-project_name = "Jotter.ai"
+project_name = "Jotter_ai"
 
 list_of_files = [
     ".github/workflows/.gitkeep",
@@ -26,7 +26,7 @@ list_of_files = [
     "Dockerfile",
     "requirements.txt",
     "setup.py",
-    "research/trails.ipynb",
+    "research/trials.ipynb",
     "test.py"
 ]
 
@@ -35,7 +35,7 @@ for filepath in list_of_files:
     filedir, filename = os.path.split(filepath)
 
 #Directory Creation
-    if filedir !="":
+    if filedir != "":
         os.makedirs(filedir, exist_ok=True)
         logging.info(f"Creating directory:{filedir} for the file {filename}")
 
